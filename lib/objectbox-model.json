@@ -1,0 +1,101 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8339187772755607119",
+      "lastPropertyId": "9:2074127469858570513",
+      "name": "Product",
+      "properties": [
+        {
+          "id": "1:6319273641434935498",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8771266751824220111",
+          "name": "sku",
+          "type": 9,
+          "flags": 2048,
+          "indexId": "1:163732062615519382"
+        },
+        {
+          "id": "3:3740734264937466236",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "4:1597490854614522770",
+          "name": "options",
+          "type": 30
+        },
+        {
+          "id": "5:3365944784916303254",
+          "name": "decription",
+          "type": 9
+        },
+        {
+          "id": "6:1107907585487113565",
+          "name": "imageUrl",
+          "type": 9
+        },
+        {
+          "id": "7:4987956717067396523",
+          "name": "imagePath",
+          "type": 9
+        },
+        {
+          "id": "8:3671438663971823660",
+          "name": "price",
+          "type": 8
+        },
+        {
+          "id": "9:2074127469858570513",
+          "name": "isFavourite",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:9071270024611186530",
+      "lastPropertyId": "3:1454514606730296729",
+      "name": "ProductOrder",
+      "properties": [
+        {
+          "id": "1:9153934265841880092",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6365764082103279340",
+          "name": "count",
+          "type": 6
+        },
+        {
+          "id": "3:1454514606730296729",
+          "name": "productRefId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:2907084201919725822",
+          "relationTarget": "Product"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:9071270024611186530",
+  "lastIndexId": "2:2907084201919725822",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
